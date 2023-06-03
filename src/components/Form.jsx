@@ -27,14 +27,14 @@ const Form = ({ onSubmit }) => {
     const handleGenderChange = (e) => {
         const newGender = e.target.value;
         setGender(newGender);
-        setValidGender(newGender.trim().length >= 3 && !newGender.includes(" "));
+        setValidGender(newGender.trim().length >= 6);
     };
 
     const handleBandChange = (e) => {
         const newBand = e.target.value;
         setFavoriteBand(newBand);
         // setValidBand(newBand.length >= 6 && /^#[0-9A-Fa-f]{6}$/i.test(newBand));
-        setValidBand(newBand.trim().length >= 6 && !newBand.includes(" "));
+        setValidBand(newBand.trim().length >= 6);
     };
 
     return (

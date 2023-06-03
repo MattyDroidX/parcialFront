@@ -27,7 +27,7 @@ const Form = ({ onSubmit }) => {
     const handleGenderChange = (e) => {
         const newGender = e.target.value;
         setGender(newGender);
-        setValidGender(newGender.trim().length >= 6);
+        setValidGender(newGender.trim().length >= 3);
     };
 
     const handleBandChange = (e) => {

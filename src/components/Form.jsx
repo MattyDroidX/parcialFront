@@ -33,7 +33,6 @@ const Form = ({ onSubmit }) => {
     const handleBandChange = (e) => {
         const newBand = e.target.value;
         setFavoriteBand(newBand);
-        // setValidBand(newBand.length >= 6 && /^#[0-9A-Fa-f]{6}$/i.test(newBand));
         setValidBand(newBand.trim().length >= 6);
     };
 
